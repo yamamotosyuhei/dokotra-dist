@@ -1,0 +1,148 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>どこでも翻訳 説明書</title><style>:root{--bg:#fff;--ink:#1b1b26;--line:#e4e4ee;--well:#f3f3f8;--accent:#5b3bf0}
+@media (prefers-color-scheme:dark){:root{--bg:#1e1f29;--ink:#f3f3f8;--line:#3a3b4a;--well:#2e2f3d;--accent:#b3a3ff}}
+body{background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,"Hiragino Sans",sans-serif;margin:0}
+main{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+h1{font-size:28px;margin:0 0 12px;padding-bottom:8px;border-bottom:4px solid;border-image:linear-gradient(90deg,#7a5cff,#ff5fa2) 1}
+h2{font-size:21px;margin:36px 0 10px;color:var(--accent)} h3{font-size:17px;margin:24px 0 6px}
+code{background:var(--well);border-radius:5px;padding:1px 6px;font:14px ui-monospace,Menlo,monospace;word-break:break-all}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:15px}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top} th{background:var(--well)}</style></head><body><main><h1>どこでも翻訳 説明書</h1>
+<p>英語にマウスを当ててキーを押すと、その場で日本語に訳します。日本語なら英語に訳します。
+VS Code・Chrome・Discord・メール・PDF など、どのアプリの上でも使えます。
+訳も文字の読み取りも、すべてこの Mac の中で行います（文章をネットに送りません）。</p>
+<h2>使い方</h2>
+<h3>その場で訳す（option＋control＋Y）</h3>
+<ol>
+<li>訳したい文にマウスを当てる</li>
+<li><strong>option＋control＋Y</strong> を押す</li>
+<li>
+<p>すぐ下に小窓が出て、訳が出ます（だいたい 0.5〜1 秒）</p>
+</li>
+<li>
+<p>同じ所でもう一度押すと、前後の文までまとめて、広げて訳し直します</p>
+</li>
+<li>小窓はマウスを離すと閉じます。閉じたくない時は「ピン」</li>
+<li>「コピー」で訳をコピー。「原文」で原文の表示と非表示を切り替えます</li>
+</ol>
+<h3>原文の単語だけ訳す</h3>
+<p>小窓の「原文」の中で知りたい単語を押すと、その単語の訳と辞書の意味が原文の下に出ます。もう一度押すと消えます。
+単語にマウスを乗せると下線が付きます。</p>
+<h3>窓ごと訳す（option＋control＋U）</h3>
+<p>いちばん前の窓の文字をまとめて訳し、その上に重ねて表示します。もう一度押すと消えます。</p>
+<h3>小窓の色</h3>
+<ul>
+<li>紫〜桃：英語 → 日本語</li>
+<li>青〜水色：日本語 → 英語</li>
+</ul>
+<h2>訳さない物</h2>
+<p>コード・URL・ファイルの場所（パス）は、訳さずにそのまま残します。
+原文の数字が訳から消えていたら、⚠ で知らせます。</p>
+<h2>メニュー（画面右上の「訳」）</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">すること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">窓ごと訳す</td>
+<td style="text-align: left;">option＋control＋U と同じ</td>
+</tr>
+<tr>
+<td style="text-align: left;">最近の訳</td>
+<td style="text-align: left;">最近の 15 件。選ぶとコピー（終了すると消える）</td>
+</tr>
+<tr>
+<td style="text-align: left;">翻訳言語を入れる…</td>
+<td style="text-align: left;">翻訳の言語データの設定を開く</td>
+</tr>
+<tr>
+<td style="text-align: left;">画面収録の許可…／アクセシビリティの許可…</td>
+<td style="text-align: left;">許可の設定を開く</td>
+</tr>
+<tr>
+<td style="text-align: left;">ログイン時に起動</td>
+<td style="text-align: left;">Mac を立ち上げた時に自動で起動する（最初はオン）</td>
+</tr>
+<tr>
+<td style="text-align: left;">再起動</td>
+<td style="text-align: left;">許可を入れた後に押す</td>
+</tr>
+<tr>
+<td style="text-align: left;">終了</td>
+<td style="text-align: left;">どこでも翻訳を止める</td>
+</tr>
+</tbody>
+</table>
+<h2>要る物</h2>
+<ul>
+<li>Apple Silicon（M1 以降）の Mac・macOS 26.4 以上</li>
+<li>許可：画面収録（必須）・アクセシビリティ（あると Mac 標準のアプリで正確になる）</li>
+<li>翻訳の言語データ：日本語と英語（米国）（「訳」→「翻訳言語を入れる…」）</li>
+<li>単語の辞書（なくても訳は出る）：辞書アプリ → 設定 →「ウィズダム英和辞典」「ウィズダム和英辞典」</li>
+</ul>
+<h2>AI を使わずに入れる</h2>
+<ol>
+<li>zip を展開したフォルダを開き、フォルダの上で右クリック →「フォルダに新規ターミナル」</li>
+<li><code>bash install.sh</code> と打って return</li>
+<li>「アクセシビリティ」の許可：システム設定 → プライバシーとセキュリティ → アクセシビリティ →「どこでも翻訳」を ON</li>
+<li>「画面収録」の許可：英語の文にマウスを当てて option＋control＋Y → 出た画面から設定を開く →「どこでも翻訳」を ON →「終了して再度開く」（出なければ「訳」→「再起動」）</li>
+<li>もう一度 option＋control＋Y。小窓に訳が出れば完了</li>
+</ol>
+<h2>マウスのボタンで訳したい時</h2>
+<p>ボタンに命令を割り当てられるアプリ（BetterTouchTool など）で、次の命令を割り当てます。</p>
+<ul>
+<li>その場で訳す：<code>/Applications/どこでも翻訳.app/Contents/MacOS/dokotra-cli trigger read</code></li>
+<li>窓ごと訳す：<code>/Applications/どこでも翻訳.app/Contents/MacOS/dokotra-cli trigger window</code></li>
+</ul>
+<h2>記録について</h2>
+<p>使った回数と、かかった時間だけを、この Mac の <code>~/Library/Application Support/Dokotra/usage.jsonl</code> に残します。
+訳した文章は残しません。どこにも送りません。消しても動きます（5MB を超えると古い分から入れ替わります）。</p>
+<h2>困った時</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">出たこと</th>
+<th style="text-align: left;">直し方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">「開発元を確認できないため開けません」</td>
+<td style="text-align: left;">zip のフォルダで <code>bash install.sh</code> をもう一度</td>
+</tr>
+<tr>
+<td style="text-align: left;">「画面収録の許可が要ります」</td>
+<td style="text-align: left;">システム設定 → プライバシーとセキュリティ → 画面収録 で ON →「訳」→「再起動」</td>
+</tr>
+<tr>
+<td style="text-align: left;">「翻訳の言語データがありません」</td>
+<td style="text-align: left;">「訳」→「翻訳言語を入れる…」で日本語と英語（米国）を入れる</td>
+</tr>
+<tr>
+<td style="text-align: left;">「マウスの所に文字が見つかりませんでした」</td>
+<td style="text-align: left;">文字の真上にマウスを当てて押す（余白では出ない）</td>
+</tr>
+<tr>
+<td style="text-align: left;">キーを押しても何も起きない</td>
+<td style="text-align: left;">画面右上に「訳」があるか。無ければアプリケーションフォルダの「どこでも翻訳」を開く</td>
+</tr>
+<tr>
+<td style="text-align: left;">単語の意味が出ない</td>
+<td style="text-align: left;">辞書アプリ → 設定 → ウィズダム英和辞典・和英辞典にチェック</td>
+</tr>
+<tr>
+<td style="text-align: left;">新しい版に入れ替えたら訳せない</td>
+<td style="text-align: left;">許可がやり直しになっている。画面収録・アクセシビリティの一覧で「どこでも翻訳」を「−」で消し、「＋」で入れ直して ON</td>
+</tr>
+</tbody>
+</table>
+<h2>消す（アンインストール）</h2>
+<ol>
+<li>「訳」→「終了」</li>
+<li>アプリケーションフォルダの「どこでも翻訳」をゴミ箱へ</li>
+<li>（任意）<code>~/Library/Application Support/Dokotra</code> をゴミ箱へ</li>
+<li>システム設定の「画面収録」「アクセシビリティ」「ログイン項目」から「どこでも翻訳」を「−」で消す</li>
+</ol></main></body></html>
